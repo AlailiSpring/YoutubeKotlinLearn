@@ -13,5 +13,6 @@ fun main(){
 
 //class替换成object完成了在kotlin中单例类的构建
 object createSingle{
-
+    //声明一个变量，延时初始化，告诉编译器，如果没有初始化，再使用的时候会报错！
+    lateinit var favouriteFood: String
 }
