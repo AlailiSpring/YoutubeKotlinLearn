@@ -1,6 +1,6 @@
 package com.learn.alaili.day211207
 
-class User(firstName: String , lastName: String) {
+class User(var firstName: String , var lastName: String) {
 
     //companion类似于java中的static
     companion object {
