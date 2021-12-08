@@ -1,4 +1,5 @@
 import com.learn.alaili.day211208.AccountTypeEnum
+import com.learn.alaili.day211208.AccountTypeWithMethod
 import com.learn.alaili.day211208.Vehicle
 
 fun main(){
@@ -16,5 +17,9 @@ fun main(){
     val value = AccountTypeEnum.valueOf("Platinum".toUpperCase())
     println(value)
     println(value.discount)
+
+    for(accountType in AccountTypeWithMethod.values()){
+        println(accountType)
+    }
 
 }
