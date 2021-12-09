@@ -13,8 +13,13 @@ class User(var firstName: String , var lastName: String) {
         }
 
         fun createUser(firstName: String="", lastName: String=""): User {
-            if (firstName.isEmpty() && lastName.isEmpty()) {
+            /*if (firstName.isEmpty() && lastName.isEmpty()) {
                 return  User("MeiMei","Han")
+            }*/
+            when{
+                firstName.isEmpty()&&lastName.isEmpty()->{
+                    return User("MeiMei","Han")
+                }
             }
             return User(firstName, lastName)
         }
